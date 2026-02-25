@@ -1,0 +1,41 @@
+:root {
+    --primary-bg-color: white
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: var(--primary-bg-color);
+}
+
+header {    
+    display: flex;
+    align-items: center;
+
+    width: 100vw;
+    height: 7.5vh;
+}
+.header-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+
+    width: 100%;
+    height: inherit;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+.latest-book-wrapper {
+    max-width: 20vw;
+    max-height: 70vw;
+}
