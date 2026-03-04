@@ -1,13 +1,9 @@
+/* Global */
 :root {
     --primary-bg-color: white
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-
     background-color: var(--primary-bg-color);
 }
 
@@ -18,7 +14,7 @@ header {
     width: 100vw;
     height: 7.5vh;
 }
-.header-items {
+header > div.header-items {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -28,14 +24,34 @@ header {
     height: inherit;
 }
 
-main {
+
+/* Index */
+body.index {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main.index {
     display: flex;
     flex-direction: column;
     justify-content: start;
     align-items: center;
 }
 
-.latest-book-wrapper {
+.latest-book-wrapper.index {
     max-width: 20vw;
     max-height: 70vw;
 }
+
+
+/* Reviews */
+body.reviews {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main.reviews {}
