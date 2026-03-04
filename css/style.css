@@ -36,15 +36,25 @@ body.index {
 main.index {
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    width: 80%;
+}
+
+#latest-book-wrapper.index {
+    display: flex;
+    flex-direction: column;
     justify-content: start;
     align-items: center;
 }
 
-.latest-book-wrapper.index {
-    max-width: 20vw;
-    max-height: 70vw;
-}
+#latest-book-wrapper.index > img {
+    max-width: 100%;
+    min-width: 10%;
 
+    object-fit: contain;
+}
 
 /* Reviews */
 body.reviews {
